@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICAMS - Webhook Test Repo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        button {
+            background-color: #0052cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #003d99;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello AICAMS Team! 🚀</h1>
+        <p>Đây là repository dùng để test chức năng GitHub Webhook + RabbitMQ.</p>
+        
+        <!-- Nơi để test sửa code: Ở branch mới, bạn hãy thử đổi màu hoặc thêm nút mới vào đây -->
+        <button id="testBtn">Click Me</button>
+        <p id="msg"></p>
+    </div>
+
+    <script>
+        document.getElementById('testBtn').addEventListener('click', function() {
+            document.getElementById('msg').innerText = "Webhook đang hoạt động rất tốt!";
+        });
+    </script>
+
+</body>
+</html>
